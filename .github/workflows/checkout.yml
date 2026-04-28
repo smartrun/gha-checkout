@@ -6,4 +6,6 @@ jobs:
     steps:
       - run: ls -al
       - uses: actions/checkout@v6
+      - run: ls -al
+      - run: cat .github/workflows/checkout.yml
       
