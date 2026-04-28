@@ -4,9 +4,10 @@ jobs:
   checkout:
     runs-on: ubuntu-latest
     steps:
-      - run: ls -al
       - uses: actions/checkout@v6
         with:
-          fetch-depth: 3
-      - run: git log --pretty=oneline
+          repository: actions/checkout
+          ref: v6
+      - run: ls -al
+        
       
